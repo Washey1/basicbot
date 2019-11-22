@@ -1,12 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>I have no answer for that.</template>
+  </category>
+    <!--Q0-->
+     <category>
+        <pattern>WHERE IS BRISTOL</pattern>
+        <template>In the South-West of England</template>
+     </category>
+    <!--Q1-->
     <category>
-        <pattern>Hello*</pattern>
-        <template>Hi there!</template>
-    </category>
+        <pattern>WHERE IS LONDON</pattern>
+        <template>Somewhere east of Bristol</template>
+     </category>
+    <!--Q2-->
     <category>
-        <pattern>*</pattern>
-        <template>I have no answer for that.</template>
+       <pattern>WHERE IS CARDIFF</pattern>
+       <template>In Wales</template>
     </category>
-
+    <!--Q3-->
+    <category>
+        <pattern>WHERE IS UWE</pattern>
+        <template>In North Bristol</template>
+    </category>
+    <!--Q4-->
+    <category>
+        <pattern>WHERE IS BEAUTY</pattern>
+        <template>In the eye of the beholder</template>
+    </category>
+    <!--Q5-->
+    <category>
+        <pattern>WHEREABOUTS IS BRISTOL</pattern>
+        <template><srai>WHERE IS BRISTOL</srai></template>
+    </category>
+    <!--Q6-->
+    <category>
+        <pattern>WHEREABOUTS IS LONDON</pattern>
+        <template><srai>WHERE IS LONDON</srai></template>
+    </category>
+     <!--Q7-->
+    <category>
+       <pattern>WHEREABOUTS IS CARDIFF</pattern>
+       <template><srai>WHERE IS CARDIFF</srai></template>
+    </category>
+    <!--Q8-->
+    <category>
+        <pattern>WHEREABOUTS IS BEAUTY</pattern>
+        <template><srai>WHERE IS BEAUTY</srai></template>
+    </category>
+    <!--Q9-->
+    <category>
+        <pattern>TELL ME WHERE BRISTOL IS</pattern>
+        <template><srai>WHERE IS BRISTOL</srai></template>
+    </category>
+    <!--Q10-->
+    <category>
+        <pattern>TELL ME WHERE CARDIFF IS</pattern>
+        <template><srai>WHERE IS CARDIFF</srai></template>
+    </category>
+    <!--Q11-->
+    <category>
+        <pattern>TELL ME WHERE UWE IS</pattern>
+        <template><srai>WHERE IS UWE</srai></template>
+    </category>
+    <!--Q12-->
+    <category>
+        <pattern>TELL ME WHERE BEAUTY IS</pattern>
+        <template><srai>WHERE IS BEAUTY</srai></template>
+    </category>
+    <!--Q13-->
+    <category>
+        <pattern>WHERE IS BRISTOL PLEASE?</pattern>
+        <template><srai>WHERE IS BRISTOL</srai></template>
+    </category>
+    <!--Q14-->
+    <category>
+        <pattern>TELL ME WHERE LONDON IS PLEASE</pattern>
+        <template><srai>WHERE IS LONDON</srai></template>
+    </category>
+    <!--Q15-->
+    <category>
+        <pattern>WHERE IS UWE PLEASE</pattern>
+        <template><srai>WHERE IS UWE</srai></template>
+    </category>
+    <!--Q16-->
+    <category>
+        <pattern>WHEREABOUTS IS BEAUTY PLEASE</pattern>
+        <template><srai>WHERE IS BEAUTY</srai></template>
+    </category>
+    <!--Q17-->
+    <category>
+        <pattern>WHERE IS BRISTOL BOT</pattern>
+        <template><srai>WHERE IS BRISTOL</srai></template>
+    </category>
+    <!--Q18-->
+    <category>
+        <pattern>WHEREABOUTS IS CARDIFF BOT</pattern>
+        <template><srai>WHERE IS CARDIFF</srai></template>
+    </category>
+    <!--Q19-->
+    <category>
+        <pattern>WHERE IS UWE BOT</pattern>
+        <template><srai>WHERE IS UWE</srai></template>
+    </category>
+    <!--Q20-->
+    <category>
+        <pattern>WHEREABOUTS IS BEAUTY BOT?</pattern>
+        <template><srai>WHERE IS BEAUTY</srai></template>
+    </category>
+    <!--Q21-->
+    <category>
+        <pattern>WHERE IS BRISTOL PLEASE BOT</pattern>
+        <template><srai>WHERE IS BRISTOL</srai></template>
+    </category>
+    <!--Q22-->
+    <category>
+        <pattern>WHEREABOUTS IS CARDIFF PLEASE BOT</pattern>
+        <template><srai>WHERE IS CARDIFF</srai></template>
+    </category>
+    <!--Q23-->
+    <category>
+        <pattern>TELL ME WHERE LONDON IS PLEASE BOT</pattern>
+        <template><srai>WHERE IS LONDON</srai></template>
+    </category>
+    <!--Q24-->
+    <category>
+        <pattern>WHERE IS UWE PLEASE BOT</pattern>
+        <template><srai>WHERE IS UWE</srai></template>
+    </category>
+    <!--Q25-->
+    <category>
+        <pattern>WHEREABOUTS IS BEAUTY PLEASE BOT?</pattern>
+        <template><srai>WHERE IS BEAUTY</srai></template>
+    </category>
+    <!--Q26-->
+    <category>
+        <pattern>WHY NOT?</pattern>
+        <template>I do not have an answer for that</template>
+    </category>
+    <!--Q27-->
+    <category>
+        <pattern>WHERE IS KEYNSHAM</pattern>
+        <template>I do not know where Keynsham<set name = "topic">KEYNSHAM</set></template>
+    </category>
+    
+    <topic name = "KEYNSHAM">
+        <category>
+            <pattern>WHY NOT?</pattern>
+            <template>Because I do not have a category to connect me to a mapping service<set name = topic>*</set></template>
+        </category>
+    </topic>
 </aiml>
