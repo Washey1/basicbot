@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-  <category>
-    <pattern>*</pattern>
-    <template>I have no answer for that.</template>
-  </category>
     <!--Q0-->
      <category>
         <pattern>WHERE IS BRISTOL</pattern>
@@ -106,7 +102,7 @@
     </category>
     <!--Q20-->
     <category>
-        <pattern>WHEREABOUTS IS BEAUTY BOT?</pattern>
+        <pattern>WHEREABOUTS IS  BEAUTY BOT?</pattern>
         <template><srai>WHERE IS BEAUTY</srai></template>
     </category>
     <!--Q21-->
@@ -131,7 +127,7 @@
     </category>
     <!--Q25-->
     <category>
-        <pattern>WHEREABOUTS IS BEAUTY PLEASE BOT?</pattern>
+        <pattern>WHEREABOUTS IS  BEAUTY PLEASE BOT?</pattern>
         <template><srai>WHERE IS BEAUTY</srai></template>
     </category>
     <!--Q26-->
@@ -142,13 +138,13 @@
     <!--Q27-->
     <category>
         <pattern>WHERE IS KEYNSHAM</pattern>
-        <template>I do not know where Keynsham<set name = "topic">KEYNSHAM</set></template>
+        <template>I do not know where <set name = "topic">Keynsham</set> is</template>
+        
     </category>
-    
-    <topic name = "KEYNSHAM">
+    <topic name = "Keynsham">
         <category>
             <pattern>WHY NOT?</pattern>
-            <template>Because I do not have a category to connect me to a mapping service<set name = topic>*</set></template>
+            <template>Because I do not have a category to connect me to a mapping service</template>
         </category>
     </topic>
 </aiml>
